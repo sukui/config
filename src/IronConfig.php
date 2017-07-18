@@ -39,8 +39,8 @@ class IronConfig
         return $result;
     }
 
-
-    private static  function getRunMode($config){
+    private static  function getRunMode($config)
+    {
         $runMode   = getenv("runMode");
         if(empty($config)){
             return $runMode;

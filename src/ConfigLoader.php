@@ -37,7 +37,8 @@ class ConfigLoader
         return $configMap;
     }
 
-    public function loadDistinguishBetweenFolderAndFile($path){
+    public function loadDistinguishBetweenFolderAndFile($path)
+    {
         if(!is_dir($path)){
             throw new InvalidArgumentException('Invalid path for ConfigLoader');
         }
