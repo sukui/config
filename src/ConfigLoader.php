@@ -1,12 +1,14 @@
 <?php
+
 namespace ZanPHP\Config;
 
 use InvalidArgumentException;
 use ZanPHP\Support\Singleton;
 use ZanPHP\Support\Dir;
 use ZanPHP\Support\Arr;
+use ZanPHP\Contracts\Config\ConfigLoader as ConfigLoaderContract;
 
-class ConfigLoader
+class ConfigLoader implements ConfigLoaderContract
 {
     use Singleton;
 

@@ -2,6 +2,7 @@
 
 namespace ZanPHP\Config;
 
+use ZanPHP\Container\Container;
 use ZanPHP\Support\Arr;
 
 class Config
@@ -46,6 +47,9 @@ class Config
             getenv("path.config"),
             getenv("path.module"),
         ];
+
+        $container = Container::getInstance();
+        $container->instance("config.loader", ConfigLoader::getInstance());
 
         $runMode = getenv("runMode");
         foreach ($paths as $path) {

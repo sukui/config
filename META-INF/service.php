@@ -2,6 +2,7 @@
 
 return [
     "ZanPHP\\Config\\Config" => [
-        "interface" => "ZanPHP\\Contracts\\Config\\Repository"
+        "interface" => "ZanPHP\\Contracts\\Config\\Repository",
+        "shared" => true
     ],
 ];
