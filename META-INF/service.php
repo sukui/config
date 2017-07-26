@@ -1,7 +1,7 @@
 <?php
 
 return [
-    "ZanPHP\\Config\\Config" => [
+    "ZanPHP\\Config\\Repository" => [
         "interface" => "ZanPHP\\Contracts\\Config\\Repository",
         "shared" => true
     ],
