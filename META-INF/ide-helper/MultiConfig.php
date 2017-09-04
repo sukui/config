@@ -6,6 +6,6 @@ class MultiConfig
 {
     public static function init()
     {
-
+        \ZanPHP\Config\MultiConfig::init();
     }
 }
