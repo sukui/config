@@ -3,11 +3,17 @@
   "require": {
     "php": ">=5.6",
     "zanphp/contracts": "dev-master",
-    "zanphp/support": "dev-master"
+    "zanphp/support": "dev-master",
+    "zanphp/testing":"dev-master"
   },
   "autoload": {
     "psr-4": {
-      "ZanPHP\\Config\\": "src/"
+      "ZanPHP\\Config\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "ZanPHP\\Container\\Tests\\": "tests"
     }
   },
   "extra": {
