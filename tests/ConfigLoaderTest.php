@@ -12,17 +12,9 @@ use ZanPHP\Testing\UnitTest;
 
 class ConfigLoaderTest extends UnitTest {
 
-    private $path;
-
-    public function setUp()
-    {
-        parent::setUp();
-        $this->path = __DIR__ . '/config';
-    }
-
     public function test(){
         $config = new ConfigLoader();
-        $result = $config->load($this->path);
+        $result = $config->load(realpath(__DIR__ . '/config'));
         $this->assertEquals('share_a', $result['share']['a']['config'], 'ConfigLoader::load fail');
         $this->assertEquals('online_b', $result['online']['b']['config'], 'ConfigLoader::load fail');
         $this->assertEquals('online_c', $result['online']['dir']['c']['config'], 'ConfigLoader::load fail');

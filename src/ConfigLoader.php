@@ -67,7 +67,7 @@ class ConfigLoader implements ConfigLoaderContract
     {
         $common = array();
         foreach ($config as $k => $v) {
-            if ($k == 'common') {
+            if ($k === "common") {
                 $common = $v;
             } else if ($common) {
                 $config[$k] = Arr::merge($common, $config[$k]);
