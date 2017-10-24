@@ -6,7 +6,7 @@
     "zanphp/support": "dev-master"
   },
   "require-dev": {
-    "zanphp/testing":"dev-master"
+    "zanphp/testing":"dev-laogui"
   },
   "autoload": {
     "psr-4": {
